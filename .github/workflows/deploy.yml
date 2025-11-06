@@ -32,4 +32,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./dist
+          # El build de Create React App se genera en la carpeta `build` (no `dist`)
+          publish_dir: ./build
